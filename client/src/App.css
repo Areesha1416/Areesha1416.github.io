@@ -1,0 +1,27 @@
+.btn-login {
+    background-color: #7e5bef;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 36px;
+    opacity: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+  }
+  .containers {
+    margin-top: 50px;
+    width: 950px;
+    background: #ffffff;
+    background: linear-gradient(44deg, #fff 62%, #8c1aff 62%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 100px;
+    border-radius: 3px;
+    padding-bottom: 40px;
+  }
+
+  .cls{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }

@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed; /* Change to fixed positioning */
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%; 
+  background-color: #1a0d46;
+  /* background-image: linear-gradient(319deg, #160e30 0%, #63033e 67%, #28013c 100%); */
+  background-image: linear-gradient(-120deg, #b201ac 0%, #320269 100%);
+/*   
+  background-image: linear-gradient(-120deg,#8923ff 100%, #ff24f7 0% ); */
+  /* background: #1f1137;  */
+  /* #142b41 */
+  transition: width 0.4s;
+  z-index: 1000; /* Set a high z-index */
+}
+
+.sidebar {
+  opacity: 0.7; /* Decrease opacity of sidebar background */
+}
+
+.sidebar .Heading,
+.sidebar .sidebar-menu,
+.sidebar .sidebar-button {
+  opacity: 1; /* Increase opacity of heading and content */
+}
+
+
+.sidebar.open {
+  width: 260px;
+}
+.sidebar.open +  #tog-sidebar{
+  margin-left: 270px !important;
+  transition: ease 300ms;
+}
+
+#tog-sidebar{
+  margin-left: 100px !important;
+}
+/* Rest of your CSS remains the same */
+.sidebar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  background: rgb(0 0 0 / 15%);
+}
+
+.sidebar-burger {
+  width: 60px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+.p{
+  color: white !important;
+  margin-bottom: 0;
+}
+
+.sidebar-logo {
+  height: 28px;
+}
+
+.sidebar-menu {
+  display: grid;
+  padding: 10px;
+}
+
+.sidebar-button {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  font-family: "Poppins";
+  font-size: 17px;
+  text-transform: capitalize;
+  line-height: 1;
+  padding: 0 10px;
+  border-radius: 8px;
+  color: #f9f9f9;
+  opacity: 0.8;
+  padding-bottom: 0 !important;
+}
+
+
+.sidebar-button:hover {
+  background: rgb(0 0 0 / 30%);
+  opacity: 1;
+  transition: ease 300ms;
+}
+
+.sidebar-button:hover > span {
+  transition: ease 300ms;
+  opacity: 1;
+}
+
+.sidebar-logo,
+.sidebar-button p {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.sidebar.open :is(.sidebar-button p, .sidebar-logo) {
+  opacity: 1;
+}
+
+.sidebar-button > img {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar-button > span {
+  opacity: 0.5;
+}
+.Heading{
+  color: white;
+  font-family: poppins;
+  font-weight: 700;
+}
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .sidebar.open +  #tog-sidebar{
+    margin-left: 26px;
+    transition: ease 300ms;
+  }
+  #tog-sidebar{
+    margin-left: 70px !important;
+    margin-right: -28px;   
+  }
+}
+.uploadheading{
+  background-color: #1a0d46;
+  /* background-image: linear-gradient(319deg, #160e30 0%, #63033e 67%, #28013c 100%); */
+  background-image: linear-gradient(-120deg, #cb01c5 0%, #430985 100%);
+  color: white !important;
+  opacity: 0.8;
+}
+
+.uploadheading .foropacity {
+  opacity: 7 !important; /* Increase opacity of heading and content */
+}

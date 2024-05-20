@@ -1,0 +1,25 @@
+.btn-login {
+    background-color: #7e5bef;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    opacity: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 250px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    display: inline-block; /* Ensures buttons are the same size even if they wrap */
+    text-align: center; /* Centers text horizontally */
+    line-height: 40px; /* Centers text vertically */
+    text-decoration: none; /* Remove underline */
+    margin: 20px;
+  }
+  
+  .btn-login:hover {
+    background-color: #6a43e0;
+  }
+  .containers {
+    background: #ffffff;
+    background: linear-gradient(44deg, #fff 62%, #8c1aff 62%);
+  }
+ 
